@@ -19,6 +19,7 @@ img {
 
 header {
     background-color: white;
+    width: 100%;
 }
 
 li {
@@ -35,9 +36,8 @@ body {
     line-height: 1.8;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
     box-sizing: border-box;
+    background: var(--light);
 }
 
 .container {
@@ -72,7 +72,6 @@ body {
 /* Navigation */
 .navbar {
     min-height: 70px;
-    padding: 0 24px;
     background: white;
     position: fixed;
     width: 100%;
@@ -333,6 +332,16 @@ body {
     color: #262626;
     border: 1px solid;
     border-color: #262626;
+}
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease;
+}
+
+.project-link:hover {
+  color: #262626;
+  text-decoration: underline; 
 }
 
 /* Contact Section */

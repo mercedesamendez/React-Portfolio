@@ -13,42 +13,49 @@ const allProjects = [
         title: "Travel and Wellness Website - UX/UI Design",
         category: "design",
         image: FareWellCard,
+        link: ""
     },
     {
         id: 2,
         title: "Cycling E-Commerce Website - UI Design",
         category: "design",
         image: ExtremeCycleCard,
+        link: ""
     },
     {
         id: 3,
         title: "Accessibility Course - LXD",
         category: "design",
         image: A11YCard,
+        link: ""
     },
     {
         id: 4,
         title: "Company Video - Ideation and Illustration",
         category: "design",
         image: ANewCard,
+        link: ""
     },
     {
         id: 5,
         title: "Full-stack Online Cycling Shop with MongoDB, Express, React",
         category: "dev",
         image: ExtremeCycleCard,
+        link: ""
     },
     {
         id: 6,
         title: "Bookstore App - API and Javascript",
         category: "dev",
         image: BookstoreAppCard,
+        link: "https://github.com/mercedesamendez/dom_project_final"
     },
     {
         id: 7,
         title: "Weather App - Weather API and React",
         category: "dev",
         image: WeatherAppCard,
+        link: "https://github.com/mercedesamendez/Weather-App"
     },
 ];
 
@@ -71,11 +78,21 @@ function Projects() {
                     <button className={`button-work ${filter === "dev" ? "active": ""}`}  onClick={() => setFilter("dev")}>dev</button>
                 </div>
 
+
                 <div className="work-grid">
                     {filteredProjects.map((project) => (
                         <div key={project.id} className="work-card">
                             <img src={project.image} alt={project.title} />
-                            <h4>{project.title}</h4>
+                            <h4>
+                                <a
+                                href={project.link}
+                                target="_black"
+                                rel="noopener noreferrer"
+                                className="project-link"
+                                >
+                                {project.title}
+                            </a>
+                            </h4>
                         </div>
                     ))}
                 </div>
