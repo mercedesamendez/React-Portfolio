@@ -378,6 +378,7 @@ form {
 label {
     margin-bottom: 8px;
     font-size: 1.5rem;
+    font-family: "Open Sans";
     font-weight: 300;
     color: #262626;
     text-transform: lowercase;
